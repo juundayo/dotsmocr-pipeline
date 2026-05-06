@@ -247,11 +247,11 @@ class JSONSaverWithImages:
             "Table": 4,
             "Caption": 5,
             "Page-footer": 6,
-            # Additional mappings for other categories (default to 0 if not specified)
-            "Title": 0,  # Treat as text
-            "Footnote": 0,  # Treat as text
-            "Formula": 0,  # Treat as text
-            "List-item": 0,  # Treat as text
+            # Additional mappings for other categories.
+            "Title": 7,
+            "Footnote": 8, 
+            "Formula": 9,
+            "List-item": 10, 
         }
         return category_mapping.get(category, 0)  # Default to 0 (text) if unknown
 
